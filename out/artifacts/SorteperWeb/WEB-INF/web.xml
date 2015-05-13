@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+            <servlet>
+                <servlet-name>mine-kort</servlet-name>
+                <servlet-class>dk.zbc.h4.kortspil.servlet.MineKortServlet</servlet-class>
+            </servlet>
+
+            <servlet>
+                <servlet-name>tag-kort</servlet-name>
+                <servlet-class>dk.zbc.h4.kortspil.servlet.TagKortServlet</servlet-class>
+            </servlet>
+
+            <servlet>
+                <servlet-name>tilfoj-spiller</servlet-name>
+                <servlet-class>dk.zbc.h4.kortspil.servlet.TilfojSpillerServlet</servlet-class>
+            </servlet>
+
+            <servlet>
+                <servlet-name>list-spillere</servlet-name>
+                <servlet-class>dk.zbc.h4.kortspil.servlet.ListSpillereServlet</servlet-class>
+            </servlet>
+
+            <servlet>
+                <servlet-name>spil</servlet-name>
+                <servlet-class>dk.zbc.h4.kortspil.servlet.SpilServlet</servlet-class>
+            </servlet>
+            <servlet>
+                <servlet-name>klar</servlet-name>
+                <servlet-class>dk.zbc.h4.kortspil.servlet.KlarServlet</servlet-class>
+            </servlet>
+
+            <servlet>
+                <servlet-name>modstander-kort</servlet-name>
+                <servlet-class>dk.zbc.h4.kortspil.servlet.ModstanderKortServlet</servlet-class>
+            </servlet>
+            <servlet>
+                <servlet-name>find-par</servlet-name>
+                <servlet-class>dk.zbc.h4.kortspil.servlet.FindParServlet</servlet-class>
+            </servlet>
+            <servlet>
+                <servlet-name>bland-kort</servlet-name>
+                <servlet-class>dk.zbc.h4.kortspil.servlet.BlandServlet</servlet-class>
+            </servlet>
+
+            <servlet>
+                <servlet-name>main</servlet-name>
+                <jsp-file>index.jsp</jsp-file>
+            </servlet>
+
+
+
+            <servlet-mapping>
+                <servlet-name>main</servlet-name>
+                <url-pattern>/main</url-pattern>
+            </servlet-mapping>
+
+            <servlet-mapping>
+                <servlet-name>mine-kort</servlet-name>
+                <url-pattern>/minekort</url-pattern>
+            </servlet-mapping>
+
+            <servlet-mapping>
+                <servlet-name>tag-kort</servlet-name>
+                <url-pattern>/tagkort</url-pattern>
+            </servlet-mapping>
+
+            <servlet-mapping>
+                <servlet-name>tilfoj-spiller</servlet-name>
+                <url-pattern>/tilfojspiller</url-pattern>
+            </servlet-mapping>
+
+            <servlet-mapping>
+                <servlet-name>list-spillere</servlet-name>
+                <url-pattern>/listspillere</url-pattern>
+            </servlet-mapping>
+
+            <servlet-mapping>
+                <servlet-name>spil</servlet-name>
+                <url-pattern>/status</url-pattern>
+            </servlet-mapping>
+
+            <servlet-mapping>
+                <servlet-name>klar</servlet-name>
+                <url-pattern>/klar</url-pattern>
+            </servlet-mapping>
+
+            <servlet-mapping>
+                <servlet-name>modstander-kort</servlet-name>
+                <url-pattern>/modstanderkort</url-pattern>
+            </servlet-mapping>
+
+            <servlet-mapping>
+                <servlet-name>find-par</servlet-name>
+                <url-pattern>/findpar</url-pattern>
+            </servlet-mapping>
+            <servlet-mapping>
+                <servlet-name>bland-kort</servlet-name>
+                <url-pattern>/bland</url-pattern>
+            </servlet-mapping>
+        </web-app>

@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="sorteper">
+    <output-path>$PROJECT_DIR$/out/artifacts/sorteper</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="dk.zbc.h4.kortspil/javaeeApplication/javaEEApplication" />
+      <element id="module-output" name="dk.zbc.h4.kortspil" />
+      <element id="javaee-facet-resources" facet="dk.zbc.h4.kortspil/web/Web" />
+    </root>
+  </artifact>
+</component>
